@@ -2,11 +2,21 @@
 
 namespace Lab06_Zoo
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Bird falcon = new Falcon();
+            falcon.Sound();
+            falcon.Fly();
+
+            Mammal elephant = new Elephant();
+            elephant.Walk();
+
+            Reptile snake = new Snake();
+            snake.SkinColor = "grey";
+            Console.WriteLine("Snake Color: " + snake.SkinColor);
+            snake.Crawling();
         }
     }
 }
